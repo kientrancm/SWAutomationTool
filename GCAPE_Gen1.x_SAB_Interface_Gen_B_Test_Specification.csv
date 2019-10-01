@@ -1,0 +1,344 @@
+﻿Get_PDM_VehicleSpeed (0),SAB_ID_ASIL_001,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeed_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeed_Tsk1 equal to required values (0)"
+Get_PDM_VehicleSpeedValidFlag (0),SAB_ID_ASIL_003,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (0)"
+Get_PDM_VehicleSpeedValidFlag (1),SAB_ID_ASIL_003,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (1)"
+Get_PDM_IGN_Status (0x00),SAB_ID_ASIL_004,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0x00","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN_On_Status","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN_On_Status equal to required values (0x00)"
+Get_PDM_IGN_Status (0x01),SAB_ID_ASIL_004,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0x01","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN_On_Status","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN_On_Status equal to required values (0x01)"
+Set_PDM_VehSpeed_Tsk1 (0),SAB_ID_ASIL_005,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeed_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeed_Tsk1 equal to required values (0)"
+Set_PDM_VehSpeedValidFlag_Tsk1 (0),SAB_ID_ASIL_007,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (0)"
+Set_PDM_VehSpeedValidFlag_Tsk1 (1),SAB_ID_ASIL_007,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (1)"
+Set_PDM_VehSpeed_Tsk2 (0),SAB_ID_ASIL_008,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeed_Tsk2","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeed_Tsk2 equal to required values (0)"
+Set_PDM_VehSpeedValidFlag_Tsk2 (0),SAB_ID_ASIL_010,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk2","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk2 equal to required values (0)"
+Set_PDM_VehSpeedValidFlag_Tsk2 (1),SAB_ID_ASIL_010,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk2","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk2 equal to required values (1)"
+Set_PDM_VehicleSpeedError (0),SAB_ID_ASIL_011,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_VehSpeedError","1. SW halt at where BSW_Main call required SAB
+2. iSAB_VehSpeedError equal to required values (0)"
+Get_PDM_SSBContact1VoltageRatio (0),SAB_ID_ASIL_012,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_SsswHnd_VSsswRatio[0]","1. SW halt at where BSW_Main call required SAB
+2. iSAB_SsswHnd_VSsswRatio[0] equal to required values (0)"
+Get_PDM_SSBContact2VoltageRatio (0),SAB_ID_ASIL_013,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_SsswHnd_VSsswRatio[1]","1. SW halt at where BSW_Main call required SAB
+2. iSAB_SsswHnd_VSsswRatio[1] equal to required values (0)"
+Get_PDM_SSBContact1Status (0),SAB_ID_ASIL_014,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_SSBContact1Status","1. SW halt at where BSW_Main call required SAB
+2. iSAB_SSBContact1Status equal to required values (0)"
+Get_PDM_SSBContact2Status (0),SAB_ID_ASIL_015,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_SSBContact2Status","1. SW halt at where BSW_Main call required SAB
+2. iSAB_SSBContact2Status equal to required values (0)"
+Call_PDM_GetPowerMode,SAB_ID_ASIL_017,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at BSW in BSW
+2. Set BP2 at GetPowerMode in PDM","1. BP1 reached
+2. BP2 reached"
+Get_PDM_SystemPowerMode (0),SAB_ID_ASIL_018,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_PDM_PowerMode","1. SW halt at where BSW_Main call required SAB
+2. iSAB_PDM_PowerMode equal to required values (0)"
+Get_PDM_IGN1_HSD_Fault_Type (0),SAB_ID_ASIL_020,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN1_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN1_HSD_Fault_Type equal to required values (0)"
+Get_PDM_IGN1_HSD_Fault_Type (1),SAB_ID_ASIL_020,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN1_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN1_HSD_Fault_Type equal to required values (1)"
+Get_PDM_IGN1_HSD_Fault_Type (4),SAB_ID_ASIL_020,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 4","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN1_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN1_HSD_Fault_Type equal to required values (4)"
+Get_PDM_IGN2_HSD_Fault_Type (0),SAB_ID_ASIL_021,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN2_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN2_HSD_Fault_Type equal to required values (0)"
+Get_PDM_IGN2_HSD_Fault_Type (1),SAB_ID_ASIL_021,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN2_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN2_HSD_Fault_Type equal to required values (1)"
+Get_PDM_IGN2_HSD_Fault_Type (4),SAB_ID_ASIL_021,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 4","1. Run to where BSW_Main call required SAB
+2. Check iSAB_IGN2_HSD_Fault_Type","1. SW halt at where BSW_Main call required SAB
+2. iSAB_IGN2_HSD_Fault_Type equal to required values (4)"
+Call_MCU_Set_Pin_IGN1_S,SAB_ID_ASIL_022,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_Pin_IGN1_S in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Set_Pin_IGN1_R,SAB_ID_ASIL_023,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_Pin_IGN1_R in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Set_Pin_IGN2_1,SAB_ID_ASIL_024,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_Pin_IGN2_1 in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Set_Pin_IGN2_2,SAB_ID_ASIL_025,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_Pin_IGN2_2 in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Reset_Pin_IGN1_S,SAB_ID_ASIL_026,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Reset_Pin_IGN1_S in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Reset_Pin_IGN1_R,SAB_ID_ASIL_027,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Reset_Pin_IGN1_R in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Reset_Pin_IGN2_1,SAB_ID_ASIL_028,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Reset_Pin_IGN2_1 in MCU","1. BP1 reached
+2. BP2 reached"
+Call_MCU_Reset_Pin_IGN2_2,SAB_ID_ASIL_029,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Reset_Pin_IGN2_2 in MCU","1. BP1 reached
+2. BP2 reached"
+Get_MCU_Pin_IGN1_S (0),SAB_ID_ASIL_030,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check Dio_Get_Pin_IGN1_S()","1. SW halt at where PDM_Main call required SAB
+2. Dio_Get_Pin_IGN1_S() equal to required values (0)"
+Get_MCU_Pin_IGN1_R (0),SAB_ID_ASIL_031,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check Dio_Get_Pin_IGN1_R()","1. SW halt at where PDM_Main call required SAB
+2. Dio_Get_Pin_IGN1_R() equal to required values (0)"
+Get_MCU_Pin_IGN2_1 (0),SAB_ID_ASIL_032,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check Dio_Get_Pin_IGN2_1()","1. SW halt at where PDM_Main call required SAB
+2. Dio_Get_Pin_IGN2_1() equal to required values (0)"
+Get_MCU_Pin_IGN2_2 (0),SAB_ID_ASIL_033,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check Dio_Get_Pin_IGN2_2()","1. SW halt at where PDM_Main call required SAB
+2. Dio_Get_Pin_IGN2_2() equal to required values (0)"
+Get_MCU_AD_HSD_FB_IGN1 (0),SAB_ID_ASIL_034,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_HSD_FB_IGN1()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_HSD_FB_IGN1() equal to required values (0)"
+Get_MCU_AD_HSD_FB_IGN2 (0),SAB_ID_ASIL_035,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_HSD_FB_IGN2()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_HSD_FB_IGN2() equal to required values (0)"
+Get_MCU_AD_HSD_SENSE_FB_IGN1 (0),SAB_ID_ASIL_036,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_HSD_SEN_FB_IGN1()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_HSD_SEN_FB_IGN1() equal to required values (0)"
+Get_MCU_AD_HSD_SENSE_FB_IGN2 (0),SAB_ID_ASIL_037,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_HSD_SEN_FB_IGN2()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_HSD_SEN_FB_IGN2() equal to required values (0)"
+Get_MCU_AD_SSSW1_IN_TASK1 (0),SAB_ID_ASIL_038,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW1_IN()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW1_IN() equal to required values (0)"
+Get_MCU_AD_SSSW2_IN_TASK1 (0),SAB_ID_ASIL_039,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW2_IN()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW2_IN() equal to required values (0)"
+Get_MCU_AD_SSSW1_REF_IN_TASK1 (0),SAB_ID_ASIL_040,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW1_REF_IN()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW1_REF_IN() equal to required values (0)"
+Get_MCU_AD_SSSW2_REF_IN_TASK1 (0),SAB_ID_ASIL_041,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW2_REF_IN()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW2_REF_IN() equal to required values (0)"
+Get_MCU_AD_SSSW1_IN_TASK2 (0),SAB_ID_ASIL_042,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW1_IN2()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW1_IN2() equal to required values (0)"
+Get_MCU_AD_SSSW2_IN_TASK2 (0),SAB_ID_ASIL_043,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW2_IN2() ","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW2_IN2()  equal to required values (0)"
+Get_MCU_AD_SSSW1_REF_IN_TASK2 (0),SAB_ID_ASIL_044,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW1_REF_IN2()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW1_REF_IN2() equal to required values (0)"
+Get_MCU_AD_SSSW2_REF_IN_TASK2 (0),SAB_ID_ASIL_045,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check AD_Read_SSSW1_REF_IN2()","1. SW halt at where PDM_Main call required SAB
+2. AD_Read_SSSW1_REF_IN2() equal to required values (0)"
+Get_MCU_RAM_Error_Status (0x00),SAB_ID_ASIL_047,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0x00","1. Run to where PDM_Main call required SAB
+2. Check 0","1. SW halt at where PDM_Main call required SAB
+2. 0 equal to required values (0x00)"
+Get_MCU_RAM_Error_Status (0x01),SAB_ID_ASIL_047,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0x01","1. Run to where PDM_Main call required SAB
+2. Check 0","1. SW halt at where PDM_Main call required SAB
+2. 0 equal to required values (0x01)"
+Get_NVM_Rem_Start_Cnt (0),SAB_ID_ASIL_048,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_DynamicDataGroup1[10]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_DynamicDataGroup1[10] equal to required values (0)"
+Get_NVM_PDMStatus_IGN1_ShourtToGND_HI (0),SAB_ID_ASIL_049,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[0]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[0] equal to required values (0)"
+Get_NVM_PDMStatus_IGN1_ShourtToGND_LO (0),SAB_ID_ASIL_050,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[1]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[1] equal to required values (0)"
+Get_NVM_PDMStatus_IGN2_ShourtToGND_HI (0),SAB_ID_ASIL_051,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[2]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[2] equal to required values (0)"
+Get_NVM_PDMStatus_IGN2_ShourtToGND_LO (0),SAB_ID_ASIL_052,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[3]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[3] equal to required values (0)"
+Set_NVM_PDMStatus_IGN1_ShourtToGND_HI (0),SAB_ID_ASIL_053,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[0]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[0] equal to required values (0)"
+Set_NVM_PDMStatus_IGN1_ShourtToGND_LO (0),SAB_ID_ASIL_054,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[1]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[1] equal to required values (0)"
+Set_NVM_PDMStatus_IGN2_ShourtToGND_HI (0),SAB_ID_ASIL_055,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[2]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[2] equal to required values (0)"
+Set_NVM_PDMStatus_IGN2_ShourtToGND_LO (0),SAB_ID_ASIL_056,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_IGNS2GCount[3]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_IGNS2GCount[3] equal to required values (0)"
+Set_NVM_Rem_Start_Cnt (0),SAB_ID_ASIL_057,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check NvMirror_DynamicDataGroup1[10]","1. SW halt at where PDM_Main call required SAB
+2. NvMirror_DynamicDataGroup1[10] equal to required values (0)"
+Get_Codings_PDM_In_CAPE (0),SAB_ID_ASIL_058,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check K_PDM_In_CAPE","1. SW halt at where PDM_Main call required SAB
+2. K_PDM_In_CAPE equal to required values (0)"
+Get_Codings_PDM_In_CAPE (1),SAB_ID_ASIL_058,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where PDM_Main call required SAB
+2. Check K_PDM_In_CAPE","1. SW halt at where PDM_Main call required SAB
+2. K_PDM_In_CAPE equal to required values (1)"
+Get_Parameters_SSSW_STUCK_MATURE_TIME (0),SAB_ID_ASIL_059,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check PAR_SSSW_STUCK_TIME","1. SW halt at where PDM_Main call required SAB
+2. PAR_SSSW_STUCK_TIME equal to required values (0)"
+Get_Parameters_Rem_Start_Time_Out (0),SAB_ID_ASIL_060,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check PAR_RES_Time_Out","1. SW halt at where PDM_Main call required SAB
+2. PAR_RES_Time_Out equal to required values (0)"
+Get_Parameters_Rem_Start_Cnt_Out (0),SAB_ID_ASIL_061,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check PAR_RES_Times","1. SW halt at where PDM_Main call required SAB
+2. PAR_RES_Times equal to required values (0)"
+Call_CAN_Get_ESCLUnlocked,SAB_ID_ASIL_063,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Get_ESCLUnlocked in CAN","1. BP1 reached
+2. BP2 reached"
+Call_CAN_Get_ESCLLocked,SAB_ID_ASIL_064,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Get_ESCLLocked in CAN","1. BP1 reached
+2. BP2 reached"
+Call_CAN_Set_PowerMode,SAB_ID_ASIL_065,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_PowerMode in CAN","1. BP1 reached
+2. BP2 reached"
+Call_CAN_Set_PowerModeValidFlag,SAB_ID_ASIL_066,ASIL A,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_PowerModeValidFlag in CAN","1. BP1 reached
+2. BP2 reached"
+Get_PDM_VehSpeed_Tsk1 (0),SAB_ID_ASIL_067,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeed_Tsk1","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeed_Tsk1 equal to required values (0)"
+Get_PDM_VehSpeedValidFlag_Tsk1 (0),SAB_ID_ASIL_069,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (0)"
+Get_PDM_VehSpeedValidFlag_Tsk1 (1),SAB_ID_ASIL_069,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk1","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk1 equal to required values (1)"
+Get_PDM_VehSpeed_Tsk2 (0),SAB_ID_ASIL_070,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeed_Tsk2","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeed_Tsk2 equal to required values (0)"
+Get_PDM_VehSpeedValidFlag_Tsk2 (0),SAB_ID_ASIL_072,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk2","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk2 equal to required values (0)"
+Get_PDM_VehSpeedValidFlag_Tsk2 (1),SAB_ID_ASIL_072,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeedValidFlag_Tsk2","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeedValidFlag_Tsk2 equal to required values (1)"
+Get_PDM_VehicleSpeedError (0),SAB_ID_ASIL_073,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_VehSpeedError","1. SW halt at where PDM_Main call required SAB
+2. iSAB_VehSpeedError equal to required values (0)"
+Set_PDM_SSBContact1VoltageRatio (0),SAB_ID_ASIL_074,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_SsswHnd_VSsswRatio[0]","1. SW halt at where PDM_Main call required SAB
+2. iSAB_SsswHnd_VSsswRatio[0] equal to required values (0)"
+Set_PDM_SSBContact2VoltageRatio (0),SAB_ID_ASIL_075,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_SsswHnd_VSsswRatio[1]","1. SW halt at where PDM_Main call required SAB
+2. iSAB_SsswHnd_VSsswRatio[1] equal to required values (0)"
+Set_PDM_SSBContact1Status (0),SAB_ID_ASIL_076,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_SSBContact1Status","1. SW halt at where PDM_Main call required SAB
+2. iSAB_SSBContact1Status equal to required values (0)"
+Set_PDM_SSBContact2Status (0),SAB_ID_ASIL_077,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_SSBContact2Status","1. SW halt at where PDM_Main call required SAB
+2. iSAB_SSBContact2Status equal to required values (0)"
+Set_PDM_SSBBatVoltage (0),SAB_ID_ASIL_078,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_SsswHnd_Vbatt","1. SW halt at where PDM_Main call required SAB
+2. iSAB_SsswHnd_Vbatt equal to required values (0)"
+Set_PDM_IGN_Status (0),SAB_ID_ASIL_079,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_IGN_On_Status","1. SW halt at where PDM_Main call required SAB
+2. iSAB_IGN_On_Status equal to required values (0)"
+Set_PDM_SystemPowerMode (0),SAB_ID_ASIL_080,ASIL B,Interfaces,ready for review,Interface test,high,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check iSAB_PDM_PowerMode","1. SW halt at where PDM_Main call required SAB
+2. iSAB_PDM_PowerMode equal to required values (0)"
+Call_CAN_Set_CAPE_Crank_Status,SAB_ID_QM_101,QM,Interfaces,ready for review,Interface test,medium,test case,"1. SW run normal
+2. Input all available values","1. Set BP1 at PDM in PDM
+2. Set BP2 at Set_CAPE_Crank_Status in CAN","1. BP1 reached
+2. BP2 reached"
+Get_Codings_K_ACC_RUN_Indicator_Lamp_USED (0),SAB_ID_QM_102,QM,Interfaces,ready for review,Interface test,medium,test case,"1. SW run normal 
+ 2. Input = 0","1. Run to where PDM_Main call required SAB
+2. Check K_ACC_RUN_Indicator_Lamp_USED","1. SW halt at where PDM_Main call required SAB
+2. K_ACC_RUN_Indicator_Lamp_USED equal to required values (0)"
+Get_Codings_K_ACC_RUN_Indicator_Lamp_USED (1),SAB_ID_QM_102,QM,Interfaces,ready for review,Interface test,medium,test case,"1. SW run normal 
+ 2. Input = 1","1. Run to where PDM_Main call required SAB
+2. Check K_ACC_RUN_Indicator_Lamp_USED","1. SW halt at where PDM_Main call required SAB
+2. K_ACC_RUN_Indicator_Lamp_USED equal to required values (1)"
