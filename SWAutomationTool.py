@@ -10,19 +10,22 @@
 
 '''
 
+import subprocess
 import os
-
 import tkinter
 from tkinter import *
 from tkinter import filedialog
 
-from HTMLtoCSV.HTMLtoTestSpec import ParseTable
-from SABHandler.SABHandler import cvt_xls_to_xlsx
-
-
+from HTMLtoTestSpec.HTMLtoTestSpec import ParseTable
+from SABTestSpecGen.SABHandler import SABTestSpecGen
 
 '''
 #GUI for SWAutomationTool
+Giao dien chinh cua phan mem
+Tinh nang
+- Tao test script tu file excel
+- Tao test specification tu file HTML report
+- Tao test specification tu file SABInterface
 '''
 class GUI(tkinter.Frame):
     def __init__(self, root):
@@ -81,6 +84,10 @@ class GUI(tkinter.Frame):
     def _excel(self):
         self.generate_html_spec.set(False)
         self.generate_sab_spec.set(False)
+        #subprocess for suport for call the other application in outside call XMLHandlerApp.jar
+        subprocess.Popen("XMLHandlerApp.jar", shell=True)
+
+        #Exit this application
 
     def _html(self):
         self.generate_excel_script.set(False)
@@ -96,7 +103,6 @@ class GUI(tkinter.Frame):
     def _gcape(self):
         self.BCM.set(False)
 
-
     def initGUI(self):
 
         self.file_paths = []
@@ -106,6 +112,7 @@ class GUI(tkinter.Frame):
         self.optionFrame = LabelFrame(self)
         self.LeftBotLabelFrame = LabelFrame(self)
         self.RightBotLabelFrame = LabelFrame(self)
+        self.Bot = LabelFrame(self)
 
         self.inputFrame.grid(row=1, column=1, sticky = W)
         self.optionFrame.grid(row=1, column=2, sticky = W)
@@ -116,9 +123,6 @@ class GUI(tkinter.Frame):
         self.statusValue = StringVar()
         self.statusValue.set('Please select your option')
         self.NameVar = tkinter.StringVar()
-
-        self.HTMLtoCSV = tkinter.IntVar()
-        self.SABHandler = tkinter.IntVar()
 
         #input file
         self.InputGroupLabel = Label(self.inputFrame, text = "-----> Input files <-----", width = 60).grid(row = 1, column = 1, columnspan = 2)
@@ -143,58 +147,58 @@ class GUI(tkinter.Frame):
         self.statusValue.set(status)
 
     def MyGUI(self):
-        oktorun = False
-        HTMLlabel = 0
-        SABlabel = 0
-        self.setStatus('Running...')
-        if not str(self.PathValue.get()):
-            self.setStatus('Missing inputs')
-        elif not str(self.NameVar.get()):
-            self.setStatus('Missing name')
-        elif (self.HTMLtoCSV.get() == 0 and (self.SABHandler.get() == 0)):
-            self.setStatus('Missing function')
-        elif (self.HTMLtoCSV.get() == 1 and (self.SABHandler.get() == 1)):
-            self.setStatus('Only one function, plz select again!')
-        elif (self.HTMLtoCSV.get() == 1):
-            if (self.GCAPE.get() == 0 and self.BCM.get() == 0):
-                self.setStatus('Missing project')
-                oktorun = False
-            elif (self.GCAPE.get() == 1 and self.BCM.get() == 1):
-                self.setStatus('Only one project, plz select again!')
-                oktorun = False
-            else:
-                oktorun = True
-                HTMLlabel = 1
-        elif (self.SABHandler.get() == 1):
-            oktorun = True
-            SABlabel = 1
+
+        #Check function
+        if not (self.generate_html_spec.get() or self.generate_sab_spec.get()):
+            self.setStatus('Please select functions')
+
+        #Check project for HTML
+        elif ((self.generate_html_spec.get() == True) and not(self.GCAPE.get() or self.BCM.get())):
+            self.setStatus('Missing Project')
+
         else:
-            oktorun = False
+            #Precheck input
+            if not str(self.PathValue.get()):
+                self.setStatus('Missing inputs')
+            elif (self.generate_html_spec.get() == True) and (not str(self.NameVar.get())):
+                self.setStatus('Missing name')
+            else:
+                self.setStatus("Running...")
 
-        if oktorun == True:
-            self.setStatus("Running")
-            files = self.file_paths
-            if HTMLlabel == 1:
-                if self.GCAPE.get() == 1:
-                    project = "Auto"
-                else:
-                    project = "Fully"
+                #Starting process
+                #Run HTML to TestSpec
+                if self.generate_html_spec.get():
 
-                for file in range(0, len(files)):
-                    html = files[file]
-                    name = os.path.splitext(html)[0]
-                    testverdict = self.NameVar.get()
-                    ParseTable(html, name + "_TestSpec", testverdict, project)
-            elif SABlabel == 1:
-                print("Run SAB handler")
+                    files = self.file_paths
+                    if self.GCAPE.get:
+                        project = "Auto"
+                    else:
+                        project = "Fully"
 
-            self.setStatus('Finished')
+                    for file in range(0, len(files)):
+                        html = files[file]
+                        name = os.path.splitext(html)[0]
+                        name = os.path.basename(name)
+                        test_verdict = self.NameVar.get()
+                        ParseTable(html, name + "_TestSpec", test_verdict, project)
 
+                #Run SAB Generate
+                if self.generate_sab_spec.get():
+                    print("Run SAB handler")
+                    files = self.file_paths
 
+                    for file in range(0, len(files)):
+                        sab_file = files[file]
+                        name = os.path.splitext(sab_file)[0]
+                        name = os.path.basename(name)
+                        SABTestSpecGen(sab_file, name)
+
+                self.setStatus('Finished')
 
 
 def runGUI():
     root = tkinter.Tk()
+    root.iconbitmap('hella_logo_icon.ico')
     rGUI = GUI(root)
     rGUI.pack()
     root.mainloop()
